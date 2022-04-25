@@ -1,25 +1,25 @@
 package com.springland365.auroramysql;
 
-import com.amazonaws.auth.DefaultAWSCredentialsProviderChain;
-import com.amazonaws.auth.EC2ContainerCredentialsProviderWrapper;
-import com.amazonaws.services.rds.auth.GetIamAuthTokenRequest;
-import com.amazonaws.services.rds.auth.RdsIamAuthTokenGenerator;
-
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.net.URL;
-import java.security.KeyStore;
-import java.security.cert.CertificateFactory;
-import java.security.cert.X509Certificate;
-import java.sql.*;
-import java.util.Properties;
+//import com.amazonaws.auth.DefaultAWSCredentialsProviderChain;
+//import com.amazonaws.auth.EC2ContainerCredentialsProviderWrapper;
+//import com.amazonaws.services.rds.auth.GetIamAuthTokenRequest;
+//import com.amazonaws.services.rds.auth.RdsIamAuthTokenGenerator;
+//
+//import java.io.File;
+//import java.io.FileOutputStream;
+//import java.io.InputStream;
+//import java.net.URL;
+//import java.security.KeyStore;
+//import java.security.cert.CertificateFactory;
+//import java.security.cert.X509Certificate;
+//import java.sql.*;
+//import java.util.Properties;
 
 /**
  * Based on sdk v1.x
  */
 public class IAMDatabaseAuthentication {
-
+/*
     private static final String SSL_CERTIFICATE = "global-bundle.pem";
 
     private static final String KEY_STORE_TYPE = "JKS";
@@ -118,5 +118,5 @@ public class IAMDatabaseAuthentication {
             return (X509Certificate) certFactory.generateCertificate(certInputStream);
         }
     }
-
+*/
 }

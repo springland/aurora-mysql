@@ -38,9 +38,9 @@ public class AuroraMysqlApplication implements ApplicationRunner {
 
 		try
 		{
-			//runAuroraSDKV2Test();
-			IAMDatabaseAuthentication  auth = new IAMDatabaseAuthentication();
-			auth.runAuroraTest(region , host , port , dbuser);
+			runAuroraSDKV2Test();
+			//IAMDatabaseAuthentication  auth = new IAMDatabaseAuthentication();
+			//auth.runAuroraTest(region , host , port , dbuser);
 		}
 		catch(Exception ex)
 		{
@@ -58,7 +58,7 @@ public class AuroraMysqlApplication implements ApplicationRunner {
 		String jdbcurl = "jdbc:mysql:aws://" + host + ":" + port ;
 
 		System.out.println(" Begin Aurora test");
-
+		System.out.println(jdbcurl);
 		final Properties properties = new Properties();
 		// Enable AWS IAM database authentication
 		properties.setProperty("useAwsIam", "true");
